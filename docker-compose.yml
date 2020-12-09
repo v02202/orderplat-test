@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  web:
+    container_name: urmark-web-container
+    image: urmark-web-image
+    build: .
+    command: ./docker-web-entry.sh
+    volumes:
+      - .:/code
+    ports:
+      - 8000:8000
+    env_file:
+      - .env

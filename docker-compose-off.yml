@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+
+  web:
+    container_name: urmart-off-web-container
+    image: urmart-off-web-image
+    build: .
+    command: ./docker-web-off-entry.sh
+    volumes:
+      - .:/code
+      - ./urmart-volumes/static:/code/orderplat/orderplat/static
+    expose:
+      - 8001
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+
+  nginx:
+    image: nginx:1.17.6-alpine
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./urmart.conf:/etc/nginx/conf.d/urmart.conf
+      - ./urmart-volumes/logs/nginx:/var/log/nginx
+      - ./urmart-volumes/static:/code/orderplat/orderplat/static
+    links:
+      - web:web
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "3"

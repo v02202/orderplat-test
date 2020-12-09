@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/css/c06.css" />
+  <title>Urmart Top</title>
+</head>
+<body>
+
+    <h4>Subscribe Us!</h4>
+    <form action="" method="post">
+        {% csrf_token %}
+         {{ form }}
+        <input type="submit" name="contact" onclick="myFunction()" value="OK" />
+    </form>
+
+    {% if cal_shop %}
+    <table>
+        <thead>
+            <tr class="first-table-row">
+            <th>shop_id</th>
+            <th>sum_order</th>
+            <th>sum_price</th>
+        </thead>
+
+        <tbody>
+
+            {% for i in cal_shop %}
+            <tr>
+                <td>{{ i.shop_id }}</td>
+                <td>{{ i.sum_order }}</td>
+                <td>{{ i.sum_price }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+    {% endif %}
+    <button><a id='back' href="{% url 'index' %}">Go Back</a></button>
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+   alert("Thanks for your subscribe!");
+}
+</script>

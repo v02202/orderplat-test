@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/c06.css" />
+  <title>UrMart Order Platform</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        {% csrf_token %}
+         {{ form }}
+        <input type="submit" name="action_one" value="OK" />
+    </form>
+    <!--{% if error %}
+    <script>
+    alert('Sorry, this product is only for vip.');
+    </script>
+    {% endif %} -->
+    {% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+
+    <table>
+        <thead>
+            <tr class="first-table-row">
+            <th>Product ID</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Shop ID</th>
+            <th>VIP</th>
+        </thead>
+
+        <tbody>
+
+        {% for i in product_info %}
+            <tr>
+                <td>{{ i.product_id }}</td>
+                <td>{{ i.stock_pcs }}</td>
+                <td>{{ i.price }}</td>
+                <td>{{ i.shop_id }}</td>
+                <td>{{ i.vip }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+    {% if order_info %}
+    <table>
+        <thead>
+            <tr class="first-table-row">
+            <th>Order ID</th>
+            <th>Product ID</th>
+            <th>Quantity</th>
+            <th>Customer ID</th>
+        </thead>
+
+        <tbody>
+
+        {% for i in order_info %}
+            <tr class="order-row">
+                <td>{{ i.order_id }}</td>
+                <td>{{ i.product_id }}</td>
+                <td>{{ i.qty }}</td>
+                <td>{{ i.customer_id }}</td>
+                <form method="POST">
+                    {% csrf_token %}
+                    <td><button class="del" type="submit" name="delete_items" value='{{ i.order_id }},{{ i.product_id }},{{ i.qty }}'>Delete</button></td>
+                </form>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    {% endif %}
+    <h4> Learn more about us?</h4>
+    <form action="/order">
+        <input type="submit" value="Yes" />
+    </form>
+
+     <button id='btn_show' onclick="show_top()">Show Top 3!</button>
+    <div id="show" style="display:none">
+        <h4>Top Three</h4>
+        {% if max_order %}
+        <ul>
+            {% for i in max_order %}
+            <li>Product {{ i.product_id }} sold {{ i.product_sum }} in total.</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+
+</body>
+</html>
+<script>
+function show_top() {
+  var x = document.getElementById("show");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>

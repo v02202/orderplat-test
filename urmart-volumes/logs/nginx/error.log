@@ -1,0 +1,35 @@
+2020/12/08 09:46:45 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:46 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:47 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:48 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:50 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:52 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:46:57 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:47:05 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:47:18 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:47:45 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:48:37 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:49:38 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:50:38 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:51:39 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:52:39 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:53:40 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:53:59 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:53:59 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:01 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:02 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:04 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:06 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:09 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:54:16 [crit] 1#1: pread() "/etc/nginx/conf.d/orderplat.conf" failed (21: Is a directory)
+2020/12/08 09:59:55 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 09:59:55 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 09:59:56 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 09:59:57 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 09:59:59 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 10:00:01 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 10:00:05 [emerg] 1#1: host not found in upstream "urmart_instance" in /etc/nginx/conf.d/urmart.conf:17
+2020/12/08 10:13:54 [error] 8#8: *1 open() "/code/orderplat/static/css/c06.css" failed (2: No such file or directory), client: 172.21.0.1, server: urmart-test.tw, request: "GET /static/css/c06.css HTTP/1.1", host: "urmart-test.tw:8080", referrer: "http://urmart-test.tw:8080/"
+2020/12/08 10:21:04 [error] 7#7: *1 open() "/code/orderplat/static/css/c06.css" failed (2: No such file or directory), client: 172.21.0.1, server: urmart-test.tw, request: "GET /static/css/c06.css HTTP/1.1", host: "urmart-test.tw:8080", referrer: "http://urmart-test.tw:8080/"
+2020/12/08 10:21:05 [error] 7#7: *1 open() "/code/orderplat/static/css/c06.css" failed (2: No such file or directory), client: 172.21.0.1, server: urmart-test.tw, request: "GET /static/css/c06.css HTTP/1.1", host: "urmart-test.tw:8080", referrer: "http://urmart-test.tw:8080/"
+2020/12/08 10:21:06 [error] 7#7: *1 open() "/code/orderplat/static/css/c06.css" failed (2: No such file or directory), client: 172.21.0.1, server: urmart-test.tw, request: "GET /static/css/c06.css HTTP/1.1", host: "urmart-test.tw:8080", referrer: "http://urmart-test.tw:8080/"

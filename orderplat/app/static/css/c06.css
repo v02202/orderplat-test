@@ -1,0 +1,150 @@
+/* this is for urmart project */
+
+body {
+  background-color: #000;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  margin-right: 20%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+
+
+h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  margin: 50px 5px 20px 60px;}
+
+
+
+
+li {
+  background-color: #ec8b68;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: .05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px #9f593f;
+  padding: 10px 0px 5px 20px;}
+
+
+
+/* New add */
+th {
+  color: #EB7A77;
+  font-size: 20px;
+  letter-spacing: .05em;
+  padding: 10px 20px 5px 60px;
+  text-align: center;
+}
+
+td {
+  color: #e3dfdd;
+  font-size: 20px;
+  letter-spacing: .05em;
+  padding: 0 20px 5px 60px;
+  text-align: center;}
+
+button {
+  font-size:28px;
+  background-color: #cb6868;
+  color: #f3dad1;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 8px 2px 8px;
+  margin: 2px auto;}
+
+#btn_show {
+  font-size:28px;
+  background-color: #FB9966;
+  color: #f3dad1;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 8px 2px 8px;
+  margin: 0 20px 5px 60px;
+}
+
+
+
+/* Form styles */
+
+form {
+  padding: 0 60px 65px 60px;}
+
+label {
+  color: #fff;
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 24px;}
+
+
+
+input[type='submit'], a.add {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 10px;
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+input[type='submit']:hover, a.add:hover {
+  background-color: #d75359;
+  color: #f3dad1;
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  top: 1px;}
+
+
+
+.selectbox {
+  display: inline;}
+
+.checkbox {
+  display: inline;
+  font-size: 16px;}
+
+
+
+/* Small screen - acts like the app would */
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: #403c3b;
+  }
+  #page {
+    max-width: 480px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+/* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  h1{
+    background-image: url(../images/2xkinglogo.png);
+    background-size: 72px 72px;
+  }
+}
