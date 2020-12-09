@@ -15,4 +15,6 @@ EMAIL_HOST='YOUR_EMAIL_HOST'
 EMAIL_HOST_USER='YOUR_EMAIL'
 EMAIL_HOST_PASSWORD='YOUR_EMAIL_PASSWORD'
 ```
-#### 
+#### AND RUN ```docker-compose -f docker-compose-off.yml build```
+
+#### THEN RUN ```docker-compose -f docker-compose-off.yml up```
