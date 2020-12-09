@@ -138,8 +138,8 @@ Q_CLUSTER = {
     'orm': 'default'
 }
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'r06b44005@g.ntu.edu.tw'
-EMAIL_HOST_PASSWORD = 'rttsexzarhaheghf'
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
