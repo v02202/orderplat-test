@@ -9,11 +9,9 @@ Project is created with:
 * Docker 19.03.13
 
 ## Setup
-To run this project, install it locally using `git clone`
+To run this project, install it locally using `git clone https://github.com/v02202/urmart-test.git`
 
-### Build the project in local, please follow the steps:
-#### After cloning this project on 
-#### Please add an .env file fist and specify the following
+#### Please add an .env file and specify the following
 * SECRET_KEY: check setting.py 
 * EMAIL_HOST: for the sending information purpose, please set a email host, ex:'smtp.gmail.com'
 * EMAIL_HOST_USER
@@ -28,6 +26,16 @@ EMAIL_HOST='YOUR_EMAIL_HOST'
 EMAIL_HOST_USER='YOUR_EMAIL'
 EMAIL_HOST_PASSWORD='YOUR_EMAIL_PASSWORD'
 ```
-#### AND RUN ```docker-compose -f docker-compose-off.yml build```
+#### Use the development mode: RUN ```docker-compose build``` and then RUN ```docker-compose up```
+You can connect to your local url: http://127.0.0.1:8000/
 
-#### THEN RUN ```docker-compose -f docker-compose-off.yml up```
+#### Use the production mode: 
+Please change localhost to certain url:
+In command line,
+```sudo vi /etc/hosts```
+and use vim adding **urmart-test.tw** as localhost
+Then, RUN ```docker-compose -f docker-compose-off.yml build``` and then RUN ```docker-compose -f docker-compose-off.yml up```
+
+You can connect to: http://urmart-test.tw/
+
+
