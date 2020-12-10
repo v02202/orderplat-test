@@ -7,6 +7,7 @@ Project is created with:
 * Django 3.1.4
 * Django-environ 0.4.5
 * Docker 19.03.13
+* AWS EC2
 
 ## Setup
 To run this project, install it locally using `git clone https://github.com/v02202/urmart-test.git`
