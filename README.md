@@ -12,7 +12,7 @@ Project is created with:
 To run this project, install it locally using `git clone https://github.com/v02202/urmart-test.git`
 
 #### Please add an .env file and specify the following
-* SECRET_KEY: check setting.py 
+* SECRET_KEY: please contact me. 
 * EMAIL_HOST: for the sending information purpose, please set a email host, ex:'smtp.gmail.com'
 * EMAIL_HOST_USER
 * EMAIL_HOST_PASSWORD
