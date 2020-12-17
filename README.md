@@ -1,5 +1,5 @@
-# urmart-test
-Urmart-test is for developers testing the orderplatform. 
+# orderplat-test
+orderplat-test is for developers testing the orderplatform. 
 
 ## Technologies
 Project is created with:
